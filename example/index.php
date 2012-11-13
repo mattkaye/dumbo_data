@@ -6,10 +6,13 @@
 // Require the class
 require_once('../dumbo.data.class.php');
 
-// Set content type to 'politics'
-$dumboData = new Dumbodata('politics');
+// Set content type to 'arts'
+$dumboData = new Dumbodata('arts');
 
-$dumboData->setTextLimit(100, 0);
+// Setting a new min and max character limit. 
+$dumboData->setTextLimit(50, 0);
+
+// Display a block of unformatted HTML
 echo $dumboData->doText();
 ?>
 <!doctype html>  
